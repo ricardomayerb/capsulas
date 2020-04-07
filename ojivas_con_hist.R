@@ -24,7 +24,7 @@ cumsum(casos_relativos)
 cumsum(casos_porcentuales)
 
 # como hacer una ojiva y un gráfico de frecuencia a partir de un histograma
-plot(cumsum(casos_por_clase))
+plot(cumsum(casos_por_clase)) 
 lines(cumsum(casos_por_clase))
 
 plot(cumsum(casos_relativos))
@@ -36,5 +36,5 @@ lines(cumsum(casos_porcentuales))
 
 
 plot(ecdf(costos))
-
+ 
 

@@ -17,7 +17,7 @@ h_rc <- hist(costos)
 
 # para imitar ejemplo del libro, ppt y videos del prof. FL
 h <- hist(costos, right = FALSE)
-h <- hist(costos, right = FALSE, freq = FALSE)
+# h <- hist(costos, right = FALSE, freq = FALSE)
 
 h_rc$counts
 h$counts
@@ -43,53 +43,44 @@ h_arbitrario <- hist(costos, breaks = c(50, 56, 69, 81, 100, 110), col = "steel 
 #####################
 # ejecutar primero el script presentar_datos_cuanti para que sepa que es costos
 
-h <- hist(costos)
-h$counts
-sum(h$counts)
-
-h$counts/sum(h$counts)
-100*h$counts/sum(h$counts)
-
-casos_por_clase <- h$counts
-total_de_casos <- sum(h$counts)
-casos_relativos <- casos_por_clase/total_de_casos
-casos_porcentuales <- 100 * casos_relativos
-
-cumsum(casos_relativos)
-cumsum(casos_porcentuales)
-
-# grafico muy sencillo, con un vector para valores de x y oro de y
-plot(x = c(1, 2, 3), y = c(5, 3, 9))
-plot(x = c(1, 2, 3), y = c(5, 3, 9), type = "l") # es una ELE entre comillas!
-
-plot(x = c(1, 2, 3), y = c(5, 3, 9))
-lines(x = c(1, 2, 3), y = c(5, 3, 9))
-
-
-# como hacer una ojiva y un grafico de frecuencia a partir de un histograma
-plot(cumsum(h$counts))
-lines(cumsum(h$counts))
-
-plot(cumsum(casos_por_clase))
-lines(cumsum(casos_por_clase))
-
-plot(cumsum(casos_relativos))
-lines(cumsum(casos_relativos))
-
-
-plot(cumsum(casos_porcentuales))
-lines(cumsum(casos_porcentuales))
-
-
-plot(ecdf(costos))
-
-
-
-# 59			   2
-# 53			   3
-# 57			   5
-# 77			   1
-# 61			   2
-# 52			   0
+# h <- hist(costos)
+# h$counts
+# sum(h$counts)
+# 
+# h$counts/sum(h$counts)
+# 100*h$counts/sum(h$counts)
+# 
+# casos_por_clase <- h$counts
+# total_de_casos <- sum(h$counts)
+# casos_relativos <- casos_por_clase/total_de_casos
+# casos_porcentuales <- 100 * casos_relativos
+# 
+# cumsum(casos_relativos)
+# cumsum(casos_porcentuales)
+# 
+# # grafico muy sencillo, con un vector para valores de x y oro de y
+# plot(x = c(1, 2, 3), y = c(5, 3, 9))
+# plot(x = c(1, 2, 3), y = c(5, 3, 9), type = "l") # es una ELE entre comillas!
+# 
+# plot(x = c(1, 2, 3), y = c(5, 3, 9))
+# lines(x = c(1, 2, 3), y = c(5, 3, 9))
 # 
 # 
+# # como hacer una ojiva y un grafico de frecuencia a partir de un histograma
+# plot(cumsum(h$counts))
+# lines(cumsum(h$counts))
+# 
+# plot(cumsum(casos_por_clase))
+# lines(cumsum(casos_por_clase))
+# 
+# plot(cumsum(casos_relativos))
+# lines(cumsum(casos_relativos))
+# 
+# 
+# plot(cumsum(casos_porcentuales))
+# lines(cumsum(casos_porcentuales))
+# 
+# 
+# plot(ecdf(costos))
+# 
+
