@@ -1,9 +1,10 @@
-n <- 18
+n <- 30
 p <- 0.72
 
 # verifiquen que se cumplen las dos condiciones para tratar esta binomial como
 #  una Normal (ver el ppt)
-
+n*p
+n*(1-p)
 n*p >= 5
 n*(1-p) >= 5
 se_cumple_condicion <- (n*p >= 5)  &  (n*(1-p) >= 5)
