@@ -22,7 +22,7 @@ mean(v3==7)
 # calculen la media poblacional de los puntajes 
 # y la propocion de casos "si" en la poblacion
 media_poblacional <- mean(puntajes)
-sum(pregunta_habitacion == "si")/900
+# sum(pregunta_habitacion == "si")/900
 proporcion_poblacional <- mean(pregunta_habitacion == "si")
 media_poblacional
 proporcion_poblacional
@@ -72,9 +72,9 @@ sd(vector_de_medias)
 hist(vector_de_desv, breaks = 70)
 abline(v = sd_poblacional, col = "red", lwd=2)
 mean(vector_de_desv)
-sd(vector_de_medias)
+sd(vector_de_desv)
 
 hist(vector_de_prop, breaks = 100)
 abline(v = proporcion_poblacional, col = "red", lwd=2)
 mean(vector_de_prop)
-sd(vector_de_medias)
+sd(vector_de_prop)

@@ -5,7 +5,7 @@
 mu <- 990
 sigma <- 80
 
-n <- 200
+n <- 30
 
 # resuelvan la pregunta SIN estandarizar nada!
 E_de_xbarra <- mu
@@ -29,10 +29,10 @@ lim980_estandarizado
 lim1000_estandarizado <- (1000 - E_de_xbarra)/sigma_de_xbarra
 lim1000_estandarizado
 
-area_grande_estandarizada <- pnorm(q = lim1000_estandarizado, mean = 0, sd = 1)
+area_grande_estandarizada <- pnorm(q = lim1000_estandarizado)
 area_grande_estandarizada
 
-area_chica_estandarizada <- pnorm(q = lim980_estandarizado, mean = 0, sd = 1)
+area_chica_estandarizada <- pnorm(q = lim980_estandarizado)
 area_chica_estandarizada
 
 area_grande_estandarizada - area_chica_estandarizada
